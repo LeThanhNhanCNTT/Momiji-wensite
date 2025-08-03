@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kỹ năng đặc định - Momiji</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <main>
+        <h2>Kỹ năng đặc định / 特定技能</h2>
+        <p><strong>Kỹ năng đặc định</strong> là một trong những hướng đi thiết thực giúp người lao động cải thiện thu nhập, nâng cao chất lượng cuộc sống và mở ra cơ hội phát triển tương lai.</p>
+        <ul>
+            <li><strong>Điều kiện:</strong><br>
+                1. Nam/Nữ tuổi từ 18-35.<br>
+                2. Không mắc bệnh truyền nhiễm như Viêm gan B, HIV,...<br>
+                3. Không tiền án tiền sự.<br>
+                4. Có chứng chỉ tay nghề.<br>
+                5. Có chứng chỉ tiếng Nhật N4.
+            </li>
+            <li><strong>Nơi học & ký túc xá:</strong> Học tại Vĩnh Long, hỗ trợ ký túc xá miễn phí, chỉ thu 10.000đ/ngày chi phí sinh hoạt.</li>
+            <li><strong>Mức lương:</strong> 20 - 30 man/tháng (~42 - 53 triệu VND).</li>
+            <li><strong>Visa:</strong> Thời hạn 5 năm và có thể gia hạn thêm 5 năm. Sau năm thứ 6 được bảo lãnh người thân.</li>
+            <li><strong>Xuất cảnh:</strong> Sau 4-6 tháng đào tạo.</li>
+            <li><strong>Quyền lợi:</strong> Hỗ trợ tiền nhà, chứng chỉ tay nghề, mua xe, đổi việc nếu có lý do, làm ở thành phố lớn.</li>
+            <li><strong>Sau khi về nước:</strong> Nhận bảo hiểm hưu trí từ 80% - 85% trong 5 năm.</li>
+        </ul>
+    </main>
+    {% include 'footer.html' %}
+</body>
+</html>

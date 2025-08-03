@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+header {
+    background-color: #e91e63;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #880e4f;
+    margin: 0;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #ad1457;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #880e4f;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+main {
+    padding: 20px;
+    background: #ffffff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+form input, form button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+form button {
+    background-color: #e91e63;
+    color: white;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #ad1457;
+}
+footer {
+    margin-top: auto;
+    background-color: #000;
+    padding: 15px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+.hero {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/japan_banner.jpg'); /* ✅ đường dẫn tuyệt đối */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+
+.hero h2, .hero p {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* ✅ Dòng cần thêm */
+}
+.footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+.footer p {
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 999; /* đảm bảo nằm trên ảnh nền */
+}
+
+.logo {
+    max-width: 80px;  /* 👈 nhỏ hơn chút */
+    height: auto;
+    display: block;
+}

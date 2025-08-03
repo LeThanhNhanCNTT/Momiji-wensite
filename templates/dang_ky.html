@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký - Momiji</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <main>
+        <h2>Đăng ký thông tin / 登録</h2>
+        <form method="post">
+            <label>Họ và tên:</label>
+            <input type="text" name="hoten" required>
+            <label>Số điện thoại (zalo):</label>
+            <input type="text" name="sdt" required>
+            <label>Ngày tháng năm sinh:</label>
+            <input type="date" name="ngaysinh" required>
+            <label>Địa chỉ:</label>
+            <input type="text" name="diachi" required>
+            <label>Trình độ học vấn:</label>
+            <input type="text" name="trinhdo" required>
+            <button type="submit">Gửi thông tin</button>
+        </form>
+    </main>
+    {% include 'footer.html' %}
+</body>
+</html>

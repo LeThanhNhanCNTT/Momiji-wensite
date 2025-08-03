@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Momiji - Du học & Lao động Nhật Bản</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <main>
+        <header class="site-header">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Momiji Logo" class="logo">
+</header>
+
+        <section class="hero">
+            <h2>Chào mừng đến với Momiji – Cánh cửa đến Nhật Bản!</h2>
+            <p>Chúng tôi đồng hành cùng bạn trên hành trình lao động và du học tại Nhật Bản.</p>
+</section>
+
+    </main>
+    {% include 'footer.html' %}
+    
+</body>
+</html>
